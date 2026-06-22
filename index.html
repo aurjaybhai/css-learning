@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Position Demo</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <style>
+        /*Child Selector */
+        /*div ke andar ka jo child h huse blue kardo (It only applies to the direct child*/
+        /*div > p {
+        color: blue;
+        background-color: brown;
+    }*/
+
+        /*Descendant Selector */
+        /*If it's not direct child also it's okay */
+        /*div p {
+        color: blue;
+        background-color: brown;
+    }*/
+
+        /*Universal Selector */
+        /*Saare elements ko meh margin aur padding zero kardo*/
+        /** {
+        margin: 0;
+        padding: 0;
+    }*/
+
+        /*Pseudo Selector */
+        /*a:visited {
+        color: yellow;
+    }*/
+
+        /*condition based pseudo selector */
+        /*p:first-child {
+        background-color:  blue;
+    }*/
+    </style>
+    <body>
+        <nav class="navbar">
+            <strong class="logo">MySite</strong>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="https://www.google.com">Go to google</a>
+            </div>
+        </nav>
+
+        <main class="page">
+            <section class="card">
+                <h2>Learning CSS</h2>
+                <p>This is my first card.</p>
+                <button>Start</button>
+            </section>
+
+            <section class="responsive-demo">
+                <div class="responsive-card">Card 1</div>
+                <div class="responsive-card">Card 2</div>
+                <div class="responsive-card">Card 3</div>
+            </section>
+
+            <section class="grid-demo">
+                <div class="grid-card">Card 1</div>
+                <div class="grid-card">Card 2</div>
+                <div class="grid-card">Card 3</div>
+                <div class="grid-card">Card 4</div>
+                <div class="grid-card">Card 5</div>
+                <div class="grid-card">Card 6</div>
+            </section>
+
+            <section class="advanced-units">
+                <div class="em-box">I use em</div>
+                <div class="vw-box">I use vw</div>
+                <div class="vh-box">I use vh</div>
+            </section>
+
+            <section class="transition-demo">
+                <div class="transition-card">
+                    <h2>Hover Me</h2>
+                    <p>I should animate smoothly.</p>
+                </div>
+            </section>
+
+            <section class="units-demo">
+                <div class="unit-box px-box">200px wide</div>
+                <div class="unit-box percent-box">50% wide</div>
+                <div class="unit-box rem-box">12rem wide</div>
+            </section>
+
+            <section class="overflow-demo">
+                <div class="overflow-box">
+                    CSS is powerful. This is a very long text repeated many
+                    times. CSS is powerful. This is a very long text repeated
+                    many times. CSS is powerful. This is a very long text
+                    repeated many times. CSS is powerful. This is a very long
+                    text repeated many times.
+                </div>
+            </section>
+
+            <section class="specificity-demo">
+                <p class="text">This text is fighting for color.</p>
+            </section>
+
+            <h1>CSS Position Demo</h1>
+            <p class="intro">
+                These boxes show how the <code>position</code> property changes
+                placement.
+            </p>
+
+            <section class="demo-area">
+                <div class="box box-static">
+                    <h2>Static</h2>
+                    <p>This is the default position.</p>
+                </div>
+
+                <div class="box box-relative">
+                    <h2>Relative</h2>
+                    <p>Moves from its normal place.</p>
+                </div>
+
+                <div class="box box-absolute">
+                    <h2>Absolute</h2>
+                    <p>Placed relative to the container.</p>
+                </div>
+            </section>
+
+            <section class="calc-demo">
+                <div class="calc-box">I use calc()</div>
+            </section>
+
+            <section class="hide-demo">
+                <div class="hide-box box-display">display none</div>
+                <div class="hide-box box-visibility">visibility hidden</div>
+                <div class="hide-box box-opacity">opacity zero</div>
+            </section>
+
+            <section class="form-demo">Z
+                <form class="login-form">
+                    <h2>Login</h2>
+
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+
+                    <button type="submit">Login</button>
+                </form>
+            </section>
+
+            <section class="typography-demo">
+              <h1>CSS Typography</h1>
+              <p>
+                Typography controls how readable and beautiful your text feels on a webpage.
+                Good typography uses proper font size, spacing, weight, and line height.
+              </p>
+              <a href="#">Read more</a>
+            </section>
+
+
+            <hr style="margin: 40px 0" />1
+            <h2>Your Practice Button</h2>
+            <button class="clickme" type="button">Click Me</button>
+        </main>
+    </body>
+</html>
